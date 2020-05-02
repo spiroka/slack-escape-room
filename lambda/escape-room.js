@@ -4,7 +4,7 @@ const expressReceiver = new ExpressReceiver({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
 });
 
-export const expressApp = expressReceiver.app;
+export const handler = expressReceiver.app;
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
