@@ -2,6 +2,12 @@
   "name": "escape-room",
   "version": "1.0.0",
   "description": "",
-  "scripts": {},
-  "author": "Gergő Takács"
+  "scripts": {
+    "build": "netlify-lambda build lambda"
+  },
+  "author": "Gergő Takács",
+  "dependencies": {
+    "@slack/bolt": "^2.0.1",
+    "netlify-lambda": "^1.6.3"
+  }
 }
