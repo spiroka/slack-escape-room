@@ -12,11 +12,11 @@ const app = new App({
 });
 
 app.command("/escape-room", async ({ ack, say }) => {
-  await ack();
+  try {
+    await ack();
 
-  await say({ text: "It works!" });
-});
-
-app.error((error) => {
-  console.error(error);
+    await say({ text: "It works!" });
+  } catch (e) {
+    console.error(e);
+  }
 });
