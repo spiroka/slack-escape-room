@@ -16,3 +16,7 @@ app.command("/escape-room", async ({ ack, say }) => {
 
   await say({ text: "It works!" });
 });
+
+app.error((error) => {
+  console.error(error);
+});
